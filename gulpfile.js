@@ -65,8 +65,6 @@ browserSyncWatch = () => {
   );
 };
 
-}
-
 exports.default = series(
   htmlTask,
   cssTask,
