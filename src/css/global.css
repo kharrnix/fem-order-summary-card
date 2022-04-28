@@ -1,0 +1,61 @@
+/*
+* #.# Variables
+*/
+:root {
+	/* Colors */
+	--color-primary: hsl(245, 75%, 52%);
+	--color-primary-selected: hsl(245, 83%, 68%);
+	--color-primary-light: hsl(225, 100%, 94%);
+	--color-primary-faded: hsl(225, 100%, 94%, 30%);
+
+	--color-card-shadow: hsl(225, 100%, 79%, 30%);
+
+	--color-neutral-light: hsl(224, 23%, 55%);
+	--color-neutral-mid: hsl(224, 23%, 55%);
+	--color-neutral-dark: hsl(223, 47%, 23%);
+
+	/* Fonts */
+	--font-primary: "Red Hat Display", serif;
+}
+
+/*
+* #.# Resets
+*/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	margin: 0;
+	padding: 0;
+	background: none;
+	font-size: 1rem;
+	border: none;
+}
+
+/*
+* #.# Typography, colors and background
+*/
+body {
+	color: var(--color-neutral-mid);
+	font-family: var(--font-primary);
+	background-color: var(--color-primary-light);
+	background-image: url(../images/pattern-background-mobile.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/*
+* #.# Desktop styles
+*/
+@media screen and (min-width: 50em) {
+	body {
+		background-image: url(../images/pattern-background-desktop.svg);
+		background-position-y: -18rem;
+		background-position-x: center;
+	}
+}

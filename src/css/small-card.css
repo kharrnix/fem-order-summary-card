@@ -1,0 +1,30 @@
+.small-card {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 1.5rem 0;
+	padding: 0.8em;
+	background-color: var(--color-primary-faded);
+	border-radius: 1rem;
+}
+
+.small-card__heading {
+	margin-bottom: 0.5rem;
+	color: var(--color-neutral-dark);
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+.small-card__link {
+	margin-left: 0.8rem;
+	color: var(--color-primary);
+	font-weight: 700;
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
+}
+
+.small-card__link:hover,
+.small-card__link:focus {
+	color: var(--color-primary-selected);
+	text-decoration: none;
+}

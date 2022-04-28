@@ -1,0 +1,32 @@
+button {
+	width: 100%;
+	margin: 0.5rem 0;
+	padding: 1em;
+	font-weight: 700;
+	border-radius: 0.8rem;
+	cursor: pointer;
+}
+
+.button--primary {
+	background-color: var(--color-primary);
+	box-shadow: 0 1.2rem 1.5rem var(--color-primary-light);
+	color: #fff;
+	transition: 400ms;
+}
+
+.button--primary:hover,
+.button--primary:focus {
+	background-color: var(--color-primary-selected);
+	transition: 400ms;
+}
+
+.button--transparent {
+	color: var(--color-neutral-mid);
+	transition: 400ms;
+}
+
+.button--transparent:hover,
+.button--transparent:focus {
+	color: var(--color-neutral-dark);
+	transition: 400ms;
+}
